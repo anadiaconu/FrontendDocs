@@ -3,6 +3,10 @@ hrApp.controller('MenuController', ['$scope', function($scope){
         {
             label: "Calculator",
             url: "demomath.html"
+        },
+        {
+            label: "Shopping!",
+            url: "shoppingcart.html"
         }
     ];
 

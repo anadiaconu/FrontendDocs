@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+</head>
+<body>
+<div ng-app="hrApp">
+<div ng-controller="ShoppingController">
+    <div  ng-repeat="images in imagesShopping" >
+        <img id="image-hover" ng-src="{{images.url}}" alt="" title="{{images.price}} "style="width:304px;height:228px;display:block;" />
+        <figcaption><b>{{images.label}}</b></figcaption>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/ShoppingController.js"></script>
+</body>
+</html>
